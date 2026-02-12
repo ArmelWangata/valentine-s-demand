@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+:root {
+  --sweet-beige: #f5e6d3;
+  --card-beige: #f2ddd2;
+  --Btn-pink: #f7a8b8;
+  --title-pink: #d96c8a;
+  --sweet-white: #fff7f2;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--sweet-beige);
+}
+
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 10px 10px 6px black;
+  background-color: var(--sweet-white);
+}
+
+.text {
+  font-family: "PT Serif", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2rem;
+  color: var(--title-pink);
+  margin: 30px;
+  padding: 34px;
+}
+
+.btn {
+  display: flex;
+  gap: 60px;
+  transition: gap 0.3s ease;
+}
+
+button {
+  display: inline-block;
+  margin: 24px;
+  padding: 20px;
+  background-color: var(--card-beige);
+  border-radius: 10px;
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--Btn-pink);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .letter {
+    width: 80%;
+  }
+
+  .text {
+    font-weight: 400;
+  }
+}
